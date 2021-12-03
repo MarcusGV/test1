@@ -1,0 +1,92 @@
+<section>
+<div class="sectionNotebook">
+  <p>
+    <strong>Instructions given: </strong>Create a web app for an online notebook. The notebook should have up to 5 pages. Starting on page 1, 
+    the user can enter text into the page. The text should be saved. The user should be able to navigate to each of the 5 pages 
+    and enter text onto each page. If the user refreshes the browser page, the text should persist. If the user opens a new tab 
+    with the web app in it, the new notebook should behave like a separate notebook with its own pages/text.
+</p>
+
+<mat-card class="card">
+  
+  <form novalidate [formGroup]="form" class="auth-form">  
+    <mat-tab-group>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">post_add</mat-icon>
+          P-1
+        </ng-template>
+        
+        <mat-form-field class="fields" appearance="fill">
+          <mat-label>Page 1</mat-label>
+          <textarea rows=10 matInput placeholder="Please write your note... :) " formControlName="p1Field"></textarea>
+      </mat-form-field>        
+  
+      </mat-tab>
+    
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">post_add</mat-icon>
+          P-2
+        </ng-template>
+        <mat-form-field class="fields" appearance="fill">
+          <mat-label>Page 2</mat-label>
+          <textarea rows=10 matInput placeholder="Please write your note... :) " formControlName="p2Field"></textarea>
+      </mat-form-field>        
+      </mat-tab>
+    
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">post_add</mat-icon>
+          P-3        
+        </ng-template>
+    
+        <mat-form-field class="fields" appearance="fill">
+          <mat-label>Page 3</mat-label>
+          <textarea rows=10 matInput placeholder="Please write your note... :) " formControlName="p3Field"></textarea>
+      </mat-form-field>        
+      </mat-tab>
+  
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">post_add</mat-icon>
+          P-5
+        </ng-template>
+    
+        <mat-form-field class="fields" appearance="fill">
+          <mat-label>Page 4</mat-label>
+          <textarea rows=10 matInput placeholder="Please write your note... :) " formControlName="p4Field"></textarea>
+      </mat-form-field>        
+      </mat-tab>
+  
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">post_add</mat-icon>
+          P-5
+        </ng-template>
+    
+        <mat-form-field class="fields" appearance="fill">
+          <mat-label>Page 5</mat-label>
+          <textarea rows=10 matInput placeholder="Please write your note... :) " formControlName="p5Field"></textarea>
+      </mat-form-field>        
+      </mat-tab>
+    </mat-tab-group>
+  
+    <!-- <button mat-raised-button color="primary" (click)="saveData()">Save data</button> -->
+
+    <button mat-raised-button color="accent" (click)="saveData()">
+      <mat-icon>save</mat-icon>
+      Save data
+  </button>
+  
+  </form>
+</mat-card>
+</div>
+
+
+</section>
+
+
+
+
+

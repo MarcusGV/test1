@@ -1,0 +1,29 @@
+
+.sectionNotebook{
+    max-width: 100%;
+}
+
+.fields{
+    width: 100%;
+    margin-top:15px;
+    // background-color:#E8EAF6 ;
+    border-radius: 10px;
+}
+
+mat-tab-group{
+    margin-bottom: 12px;
+}
+
+
+@media (min-width: 460px) {
+
+}
+
+@media (min-width: 760px) {
+    .card{
+        width: 90%;        
+        max-width: 1024px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
